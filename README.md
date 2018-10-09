@@ -1,4 +1,10 @@
 # deep-learning-miniproject
+This is the mini project from EC601.
+
+Author: Min Zhou
+
+Email: minzhou@bu.edu
+
 
 ## Introduction and Goals:
 1. Use TensorFlow (or any tool you prefer) to recognize between two classes of objects.  These classes could be:
