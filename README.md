@@ -11,7 +11,7 @@ Email: minzhou@bu.edu
 In this mini project, I have trained two different deep learning model to recognize roses and sunflowers.
 
 1. A simple model(without conv layer): only contains one simple flatten layer and two densely-connected NN layers.
-2. VGG-16 model: using the VGG-16 structure.
+2. [VGG-16](https://arxiv.org/pdf/1409.1556v6.pdf) model: using the VGG-16 structure.
 3. Training, validation and test dataset:
 ```
 Number of training examples = 1092
