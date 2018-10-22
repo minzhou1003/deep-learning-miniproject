@@ -92,7 +92,7 @@ Image: 15972975956_9a770ca9dd_n.jpg, Predict result: sunflower
 
 ## Goals:
 1. [x] Use TensorFlow (or any tool you prefer) to recognize between two classes of objects.
-* [x] Roses and Sunflowers
+* Roses and Sunflowers
 2. [x] You need to capture the images yourself and tag them.  You can use any Tagging system (e.g, https://hubs.ly/H0dktLv0 Neurala).  
 3. [x] You need to design your own Training, Testing, and Verification sets.
 4. [x] You need to compare between two different systems based on the literature review you did and/or reading the material provided
