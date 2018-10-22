@@ -28,10 +28,10 @@ y_val shape: (274,)
 * `sunflower` folder: images of sunflower.
 * `test_images` folder: store all the images you want to test using the trained model. There are three images already if you don't have test images.
 * `flower_recognition_using_deep_learning.ipynb`: the Jupyter Notebook for developing and training the model.
-* `simple_flower_recognition.py`: the python script to run the trained "simple model".
+* `simple_flower_recognition.py`: the _python API_ to run the trained "simple model".
 * `simple_model.h5`: trained model weights.
 * `simple_model.json`: trained model.
-* `vgg16_model.h5`: trained VGG-16 weights.
+* `vgg16_model.h5`: trained VGG-16 weights(This file is too big can't be uploaded to github)
 * `vgg16_model.json`: trained VGG-16 model.
 * `requirements.txt`: necessary python libraries.
 
@@ -96,4 +96,4 @@ Image: 15972975956_9a770ca9dd_n.jpg, Predict result: sunflower
 2. [x] You need to capture the images yourself and tag them.  You can use any Tagging system (e.g, https://hubs.ly/H0dktLv0 Neurala).  
 3. [x] You need to design your own Training, Testing, and Verification sets.
 4. [x] You need to compare between two different systems based on the literature review you did and/or reading the material provided
-Bonus:  Provide an API with example code for another developer to use your system
+Bonus: [x] Provide an API with example code for another developer to use your system
