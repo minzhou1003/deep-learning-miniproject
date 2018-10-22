@@ -31,7 +31,7 @@ y_val shape: (274,)
 * `simple_model.json`: trained model.
 
 ## Compare models:
-The test accuracy of the simple model and VGG-16 model are 85.5% and 44.1% respectively. There are some main facts caused the lower accuracy of VGG-16 model:
+The test accuracy of the simple model and VGG-16 model are 85.5% and 55.9% respectively. There are some main facts caused the lower accuracy of VGG-16 model:
 
 1. Overfitting
     * Lack of data.
