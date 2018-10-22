@@ -24,11 +24,17 @@ y_val shape: (274,)
 ```
 
 ## File Instruction
-* `test_images folder`: store all the images you want to test using the trained model. There are three images already if you don't have test images.
+* `rose` folder: images of rose.
+* `sunflower` folder: images of sunflower.
+* `test_images` folder: store all the images you want to test using the trained model. There are three images already if you don't have test images.
 * `flower_recognition_using_deep_learning.ipynb`: the Jupyter Notebook for developing and training the model.
 * `simple_flower_recognition.py`: the python script to run the trained "simple model".
 * `simple_model.h5`: trained model weights.
 * `simple_model.json`: trained model.
+* `vgg16_model.h5`: trained VGG-16 weights.
+* `vgg16_model.json`: trained VGG-16 model.
+* `requirements.txt`: necessary python libraries.
+
 
 ## Compare models:
 The test accuracy of the simple model and VGG-16 model are 85.5% and 55.9% respectively. There are some main facts caused the lower accuracy of VGG-16 model:
@@ -37,6 +43,52 @@ The test accuracy of the simple model and VGG-16 model are 85.5% and 55.9% respe
     * Lack of data.
     * The model is too complex for this simple binary classification problem. 
 3. Optimal hyperparameters need to be tuned in the future.
+
+## Installation:
+
+### 1. Download this repository:
+```
+git clone https://github.com/minzhou1003/deep-learning-miniproject.git
+```
+
+### 2. Put your test image to the `test_images/` folder
+
+There are three images already if you don't have test images.
+
+### 3. Set up and activate virtualenv inside that folder.
+```
+cd deep-learning-miniproject
+virtualenv --python python3 env
+source env/bin/activate
+```
+
+### 4. Install python libraries:
+```
+pip install -r requirements.txt
+```
+
+### 5. Run the python API of the simple model:
+```
+python simple_flower_recognition.py
+```
+
+### 6. Sample output:
+```
+$ python simple_flower_recognition.py
+Using TensorFlow backend.
+
+Did you put all test images to the "/test_images" folder? ("yes"/"no") yes
+2018-10-22 01:33:58.746880: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+
+Model successfully loaded from disk!
+
+Image: 15951588433_c0713cbfc6_m.jpg, Predict result: rose
+
+Image: 15965652160_de91389965_m.jpg, Predict result: rose
+
+Image: 15972975956_9a770ca9dd_n.jpg, Predict result: sunflower
+```
+
 
 ## Goals:
 1. [x] Use TensorFlow (or any tool you prefer) to recognize between two classes of objects.
